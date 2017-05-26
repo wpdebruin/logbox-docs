@@ -7,6 +7,9 @@
 |columnMap |struct|false|---|A column map for aliasing columns. (Optional) |
 |autocreate |boolean|false|false |if true, then we will create the table. Defaults to false (Optional) |
 |textDBType |string |false |text |The database type for the message and extended info fields. |
+|rotate |boolean|false |true |Rotate database entries. |
+|rotationDays |numeric |false |30 |Number of days  log entries stay in database. |
+|rotationFrequency |numeric |false |5 |Number of minutes before logrotation will be checked again. |
 
 The columns needed or created in the table are
 * `id` : UUID
